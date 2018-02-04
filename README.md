@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+## Welcome to Sheridan’s powershell repository
 
-You can use the [editor on GitHub](https://github.com/sheridanwendt/powershell/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is an ongoing [powershell repository]( https://github.com/sheridanwendt/powershell) for hosting original powershell scripts that I have found useful in my IT career. Feel free to use them, comment on them, or help improve them. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Not looking for Powershell? [Here are my other repositories.](https://github.com/sheridanwendt)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Example:
+Here is the descrtipion of one of my favorites:
 
 ```markdown
-Syntax highlighted code block
+# ********************************************************************************
+#
+# Script Name: New_User.ps1
+# Version: 1.0
+# Author: Sheridan Wendt
+# Date: 9/15/2017
+# Applies to: Users
+#
+# Description: This script performs the normal steps involved in creating a new
+# user, including: copying user in active directory, assigning group membership, 
+# creating a home drive folder, setting permissions, creating an application
+# folder, setting permissions creating a folder based on the department the user 
+# is in, settings permissions, assigning gender in active directory, assigning
+# group(s) based on gender in active directory, assigning a manager, assigning a 
+# state, assiging a phone extension in active directory, puting the user in the 
+# correct OU in active directory, creating an exchange mailbox using the storage 
+# group with the most free space, handle errors and log the actions taken
+#
+# ********************************************************************************
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sheridanwendt/powershell/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Home](http://SheridanWendt.com) [Music](http://music.SheridanWendt.com) [Projects](http://projects.SheridanWendt.com)
