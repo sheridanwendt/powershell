@@ -1,12 +1,12 @@
 ## Welcome to Sheridan’s powershell repository
 
-This is an ongoing [powershell repository]( https://github.com/sheridanwendt/powershell) for hosting original powershell scripts that I have found useful in my IT career. Feel free to use them, comment on them, or help improve them. 
+This is a referance pageo for my ongoing [powershell repository]( https://github.com/sheridanwendt/powershell) where I keep original powershell scripts that I have found useful in my IT career. Feel free to use them, comment on them, or help improve them. 
 
 
 Not looking for Powershell? [Here are my other repositories.](https://github.com/sheridanwendt)
 
 
-Here is the descrtipion of one of my [New_User.ps1](https://github.com/sheridanwendt/powershell/blob/master/New_User.ps1). script:
+Here is the descrtipion taken from my [New_User.ps1](https://github.com/sheridanwendt/powershell/blob/master/New_User.ps1). script:
 
 ```markdown
 # *****************************************************************
