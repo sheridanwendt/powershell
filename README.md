@@ -1,6 +1,6 @@
 ## Welcome to Sheridan’s powershell repository
 
-This is a referance pageo for my ongoing [powershell repository]( https://github.com/sheridanwendt/powershell) where I keep original powershell scripts that I have found useful in my IT career. Feel free to use them, comment on them, or help improve them. 
+This is a reference page for my ongoing [powershell repository]( https://github.com/sheridanwendt/powershell) where I keep original powershell scripts that I have found useful in my IT career. Feel free to use them, comment on them, or help improve them. 
 
 
 Not looking for Powershell? [Here are my other repositories.](https://github.com/sheridanwendt)
