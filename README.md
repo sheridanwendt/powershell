@@ -10,6 +10,11 @@ Not looking for Powershell? [Here are my other repositories.](https://github.com
 [NewUser.ps1](https://github.com/sheridanwendt/powershell/blob/master/NewUser.ps1)
 This script performs the normal steps involved in creating a new user, including: copying user in active directory, assigning group membership, creating a home drive folder, setting permissions, creating an application folder, setting permissions creating a folder based on the department the user is in, settings permissions, assigning gender in active directory, assigning group(s) based on gender in active directory, assigning a manager, assigning a state, assiging a phone extension in active directory, puting the user in the correct OU in active directory, creating an exchange mailbox using the storage group with the most free space, handle errors and log the actions taken
 
+### Terminate User
+[TerminateUser.ps1](https://github.com/sheridanwendt/powershell/blob/master/TerminateUser.ps1)
+This script performs the normal steps involved in terminating access for a specific user, including: disabling in ADUC, setting a random password, exporting a list of group membership for later reference, removing user from all groups for security reasons, archiving user folders, forwarding future emails to the user's previous supervisor, disabling ActiveSync, removing user's ipPhone entry for allocation to Cisco devices, and move the user's Active Director user object to an OU named Disabled so ADUC stays nice and clean.
+Note: Able to skips "Protected Users" such as; CEOuser, COOuser, CIOuser, CISOuser, etc.
+
 ### Home Drive Cleanup
 [HomeDriveCleanup.ps1](https://github.com/sheridanwendt/powershell/blob/master/HomeDriveCleanup.ps1)
 This script queries Active Directory for a list of disabled user then checks a root folder, $HomeRoot, such as a directory containing user folders and if there is a folder name that matches a user in the disabled list it gets archived. The process is repeated if there is a directory defined for the $AppRoot variable. If a folder gets archived an entry is added to a log.
