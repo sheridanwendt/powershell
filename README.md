@@ -1,35 +1,26 @@
-## Welcome to Sheridan’s powershell repository
-
-This is a reference page for my ongoing [powershell repository]( https://github.com/sheridanwendt/powershell) where I keep original powershell scripts that I have found useful in my IT career. Feel free to use them, comment on them, or help improve them. 
+This is a reference page for my ongoing [powershell repository](https://github.com/sheridanwendt/powershell) where I keep original powershell scripts that I have found useful in my IT career. Feel free to use or improve them. 
 
 
 Not looking for Powershell? [Here are my other repositories.](https://github.com/sheridanwendt)
 
-
-Here is the descrtipion taken from my [New_User.ps1](https://github.com/sheridanwendt/powershell/blob/master/New_User.ps1). script:
-
 ```markdown
-# ****************************************************************
-#
-# Script Name: New_User.ps1
-# Version: 1.0
-# Author: Sheridan Wendt
-# Date: 9/15/2017
-# Applies to: Users
-#
-# Description: This script performs the normal steps involved in 
-# creating a new user, including: copying user in active 
-# directory, assigning group membership, creating a home drive 
-# folder, setting permissions, creating an application folder, 
-# setting permissions creating a folder based on the department 
-# the user is in, settings permissions, assigning gender in active 
-# directory, assigning group(s) based on gender in active 
-# directory,assigning a manager, assigning a state, assiging a 
-# phone extension in active directory, puting the user in the 
-# correct OU in active directory, creating an exchange mailbox 
-# using the storage group with the most free space, handle errors
-# and log the actions taken.
-# ****************************************************************
+# Happy Scripting!
 ```
+### New User
+[NewUser.ps1](https://github.com/sheridanwendt/powershell/blob/master/NewUser.ps1)
+This script performs the normal steps involved in creating a new user, including: copying user in active directory, assigning group membership, creating a home drive folder, setting permissions, creating an application folder, setting permissions creating a folder based on the department the user is in, settings permissions, assigning gender in active directory, assigning group(s) based on gender in active directory, assigning a manager, assigning a state, assiging a phone extension in active directory, puting the user in the correct OU in active directory, creating an exchange mailbox using the storage group with the most free space, handle errors and log the actions taken
+
+### Check Exchange Logs Space
+[CheckExchangeLogsSpace.ps1](https://github.com/sheridanwendt/powershell/blob/master/CheckExchangeLogsSpace.ps1)
+This script will retrieve the amount of free space remaining on any disk, specified by letter, on any computer or server, specified by it's name. Then an email will be sent to the address specified including the space details. 
+
+### Check For VM Snapshots
+[CheckForVMSnapshots.ps1](https://github.com/sheridanwendt/powershell/blob/master/CheckForVMSnapshots.ps1)
+This script queries vCenter to determine if any VM snapshots exist and sends an email if any snapshots are found. Prevents empty storage arry level snapshots from being empty and unusable due to taking snapshots of the latest VM level snapshot.
+
+### Fix Permissions
+[FixPermissions.ps1](https://github.com/sheridanwendt/powershell/blob/master/FixPermissions.ps1)
+This script will copy the permissions of a template folder ($Template) then assign those permissions to a list of folders inside of a root folder. It will also add an access rule ($AR) to the copied permissions, which is useful to grant "Modify" access to the folder for a user that has the same name as the $SubFolder.name (works only when the folder name is the same as the username, such as a Home Drive.)
+
 
 [Home](http://SheridanWendt.com) [Music](http://music.SheridanWendt.com) [Projects](http://projects.SheridanWendt.com)
