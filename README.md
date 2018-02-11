@@ -14,6 +14,11 @@ This script performs the normal steps involved in creating a new user, including
 [HomeDriveCleanup.ps1](https://github.com/sheridanwendt/powershell/blob/master/HomeDriveCleanup.ps1)
 This script queries Active Directory for a list of disabled user then checks a root folder, $HomeRoot, such as a directory containing user folders and if there is a folder name that matches a user in the disabled list it gets archived. The process is repeated if there is a directory defined for the $AppRoot variable. If a folder gets archived an entry is added to a log.
 
+### SMS Notifications
+[SMSNotifications.ps1](https://github.com/sheridanwendt/powershell/blob/master/SMSNotifications.ps1)
+Description: This script assigns a various list of customizable messages to the variable $Messages, generates a random email address (so these notifications cannot be blocked by the recipient), and sends the message via email to a phone carrier's email:sms gateway. A 30 second break is taken and then the next text is sent until 10 (number assigned to $MaxCount) notifications have been sent.
+Resource: https://en.wikipedia.org/wiki/SMS_gateway#Spreadsheet-to-SMS_gateway
+
 ### Check Exchange Logs Space
 [CheckExchangeLogsSpace.ps1](https://github.com/sheridanwendt/powershell/blob/master/CheckExchangeLogsSpace.ps1)
 This script will retrieve the amount of free space remaining on any disk, specified by letter, on any computer or server, specified by it's name. Then an email will be sent to the address specified including the space details. 
