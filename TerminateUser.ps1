@@ -84,7 +84,7 @@ Write-Host "$Username Groups exported"
 Get-ADPrincipalGroupMembership -Identity $Username | where {$_.Name -notlike "Domain Users"} |% {Remove-ADPrincipalGroupMembership -Identity $Username -MemberOf $_ -Confirm:$false}
 Write-Host "$Username removed from groups"
 
-#Archive folders onto MJNAS
+#Archive folders to FileServer 
 Move-Item -path "\\FileServer\Users\$Username" -Destination "\\FileServer\EmployeeArchive\$Username" -force
 Write-Host "$Username Home Drive archived to \\FileServer\EmployeeArchive\$Username"
 Move-Item -path "\\AppServer\Users\$Username" -Destination "\\FileServer\EmployeeArchive\$Username\AppName" -force
