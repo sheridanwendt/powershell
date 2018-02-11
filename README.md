@@ -6,6 +6,7 @@ Not looking for Powershell? [Here are my other repositories.](https://github.com
 ```markdown
 # Happy Scripting!
 ```
+## Active Directory User Management
 ### New User
 [NewUser.ps1](https://github.com/sheridanwendt/powershell/blob/master/NewUser.ps1)
 This script performs the normal steps involved in creating a new user, including: copying user in active directory, assigning group membership, creating a home drive folder, setting permissions, creating an application folder, setting permissions creating a folder based on the department the user is in, settings permissions, assigning gender in active directory, assigning group(s) based on gender in active directory, assigning a manager, assigning a state, assiging a phone extension in active directory, puting the user in the correct OU in active directory, creating an exchange mailbox using the storage group with the most free space, handle errors and log the actions taken
@@ -28,13 +29,27 @@ Resource: https://en.wikipedia.org/wiki/SMS_gateway#Spreadsheet-to-SMS_gateway
 [CheckExchangeLogsSpace.ps1](https://github.com/sheridanwendt/powershell/blob/master/CheckExchangeLogsSpace.ps1)
 This script will retrieve the amount of free space remaining on any disk, specified by letter, on any computer or server, specified by it's name. Then an email will be sent to the address specified including the space details. 
 
+### Fix Permissions
+[FixPermissions.ps1](https://github.com/sheridanwendt/powershell/blob/master/FixPermissions.ps1)
+This script will copy the permissions of a template folder ($Template) then assign those permissions to a list of folders inside of a root folder. It will also add an access rule ($AR) to the copied permissions, which is useful to grant "Modify" access to the folder for a user that has the same name as the $SubFolder.name (works only when the folder name is the same as the username, such as a Home Drive.)
+
+## VMWare Related Scripts
+
 ### Check For VM Snapshots
 [CheckForVMSnapshots.ps1](https://github.com/sheridanwendt/powershell/blob/master/CheckForVMSnapshots.ps1)
 This script queries vCenter to determine if any VM snapshots exist and sends an email if any snapshots are found. Prevents empty storage arry level snapshots from being empty and unusable due to taking snapshots of the latest VM level snapshot.
 
-### Fix Permissions
-[FixPermissions.ps1](https://github.com/sheridanwendt/powershell/blob/master/FixPermissions.ps1)
-This script will copy the permissions of a template folder ($Template) then assign those permissions to a list of folders inside of a root folder. It will also add an access rule ($AR) to the copied permissions, which is useful to grant "Modify" access to the folder for a user that has the same name as the $SubFolder.name (works only when the folder name is the same as the username, such as a Home Drive.)
+### VMWare: Rescan All Storage (new HBAs and new VMFS)
+This script will instruct each host in the cluster to rescan it's storage adapters for new physical (HBAs) storage devices AND for VMFS volumes on LUNs
+https://github.com/sheridanwendt/powershell/blob/master/VMWare_RescanStorage.ps1
+
+### VMWare: Rescan for new HBAs
+[VMWare_RescanHBAs.ps1](https://github.com/sheridanwendt/powershell/blob/master/VMWare_RescanHBAs.ps1)
+This script will instruct each host in a cluster to rescan it's Host Bus Adapters (HBAs) for new storage devices
+
+### VMWare: Rescan existing HBAs for new VMFS volumes
+[VMWare_RescanVMFS.ps1](https://github.com/sheridanwendt/powershell/blob/master/VMWare_RescanVMFS.ps1)
+This script will instruct each host in the cluster to rescan it's existing Host Bus Adapters (HBAs) for new VMFS volumes
 
 
 [Home](http://SheridanWendt.com) [Music](http://music.SheridanWendt.com) [Projects](http://projects.SheridanWendt.com)
