@@ -9,7 +9,7 @@ Not looking for Powershell? [Here are my other repositories.](https://github.com
 ## Microsoft Azure
 
 ### New Azure Virtual Machine (VM)
-[New-AzureVM.ps1] (https://github.com/sheridanwendt/powershell/blob/master/New-AzureVM.ps1)
+[New-AzureVM.ps1](https://github.com/sheridanwendt/powershell/blob/master/New-AzureVM.ps1)
 This script performs the steps involved in creating a new virtual machine in Microsoft's Azure. It's a great example script to modify for your needs and includes configurable Resource Groups, Storage Accounts, Virtual Networks, Subnets, VM Credentials, etc.
 
 ## Active Directory User Management
