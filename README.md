@@ -7,6 +7,11 @@ Not looking for Powershell? [Here are my other repositories.](https://github.com
 # Happy Scripting!
 ```
 ## Active Directory User Management
+### New Azure Virtual Machine (VM)
+[New-AzureVM.ps1] (https://github.com/sheridanwendt/powershell/blob/master/New-AzureVM.ps1)
+This script performs the steps involved in creating a new virtual machine in Microsoft's Azure. It's a great example script to modify for your needs and includes configurable Resource Groups, Storage Accounts, Virtual Networks, Subnets, VM Credentials, etc.
+
+## Active Directory User Management
 
 ### New User
 [NewUser.ps1](https://github.com/sheridanwendt/powershell/blob/master/NewUser.ps1)
@@ -45,8 +50,8 @@ Resource: https://en.wikipedia.org/wiki/SMS_gateway#Spreadsheet-to-SMS_gateway
 This script queries vCenter to determine if any VM snapshots exist and sends an email if any snapshots are found. Prevents empty storage arry level snapshots from being empty and unusable due to taking snapshots of the latest VM level snapshot.
 
 ### VMWare: Rescan All Storage (new HBAs and new VMFS)
-This script will instruct each host in the cluster to rescan it's storage adapters for new physical (HBAs) storage devices AND for VMFS volumes on LUNs
-https://github.com/sheridanwendt/powershell/blob/master/VMWare_RescanStorage.ps1
+[VMWare_RescanAllStorage.ps1](https://github.com/sheridanwendt/powershell/blob/master/VMWare_RescanStorage.ps1) This script will instruct each host in the cluster to rescan it's storage adapters for new physical (HBAs) storage devices AND for VMFS volumes on LUNs
+
 
 ### VMWare: Rescan for new HBAs
 [VMWare_RescanHBAs.ps1](https://github.com/sheridanwendt/powershell/blob/master/VMWare_RescanHBAs.ps1)
