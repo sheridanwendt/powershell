@@ -1,6 +1,6 @@
 ﻿# ********************************************************************************
 #
-# Script Name: New_AzureVM.ps1
+# Script Name: Azure-NewVM.ps1
 # Version: 1.0
 # Author: Sheridan Wendt
 # Date: 9/5/2018
