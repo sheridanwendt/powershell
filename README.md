@@ -50,9 +50,12 @@ Resource: https://en.wikipedia.org/wiki/SMS_gateway#Spreadsheet-to-SMS_gateway
 [CheckForVMSnapshots.ps1](https://github.com/sheridanwendt/powershell/blob/master/CheckForVMSnapshots.ps1)
 This script queries vCenter to determine if any VM snapshots exist and sends an email if any snapshots are found. Prevents empty storage arry level snapshots from being empty and unusable due to taking snapshots of the latest VM level snapshot.
 
+### Clone Template to VM
+[VMWare_CloneTemplateToVM.ps1](https://github.com/sheridanwendt/powershell/blob/master/VMWare-CopyVMTemplate.ps1)
+This script can be used to create a new VM based on a template. The script displays to the user the name of the available Hosts and Datastores and prompts the user to select these parameters.
+
 ### VMWare: Rescan All Storage (new HBAs and new VMFS)
 [VMWare_RescanAllStorage.ps1](https://github.com/sheridanwendt/powershell/blob/master/VMWare_RescanStorage.ps1) This script will instruct each host in the cluster to rescan it's storage adapters for new physical (HBAs) storage devices AND for VMFS volumes on LUNs
-
 
 ### VMWare: Rescan for new HBAs
 [VMWare_RescanHBAs.ps1](https://github.com/sheridanwendt/powershell/blob/master/VMWare_RescanHBAs.ps1)
